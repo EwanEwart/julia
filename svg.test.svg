@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+<style>
+    .small {
+      font: italic 13px sans-serif;
+    }
+    .heavy {
+      font: bold 30px sans-serif;
+    }
+    .Rrrrr {
+      font: italic 40px serif;
+      fill: red;
+    }
+  </style>
+
+  
+    <ellipse rx="300" ry="100" stroke="green" fill="orange" />
+    
+    <line x1="100"  y1="0" x2="100" y2="500" stroke="#255c8b" stroke-width="5" />
+    
+    <line x1="0" y1="50" x2="200" y2="20" stroke="#880a0a" stroke-width="2" />
+ 
+    <text x="20" y="35" class="small">My</text>
+    <text x="40" y="35" class="heavy">cat</text>
+    <text x="55" y="55" class="small">is</text>
+    <text x="65" y="55" class="Rrrrr">Grumpy!</text>
+    
+  </svg>
