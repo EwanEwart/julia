@@ -13,9 +13,9 @@ AI = inv(A)
 S = AI * b
 
 # print results
-print("A * S = b")
-print("---------")
-print("A = ", A, '\n')
-print("b = ",b, '\n')
-print("C = ", S, '\n')
-print("A * S = ", A*S)
+println("A * S = b")
+println("---------")
+println("A = ", A)
+println("b = ",b)
+println("C = ", S)
+println("A * S = ", A*S)
