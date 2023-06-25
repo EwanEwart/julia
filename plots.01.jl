@@ -1,17 +1,44 @@
 using Plots
 
-# a = [0:10:10;0:10:10]
-# plot(a)
+# #############################
+# define the Lorenz attractor
+# #############################
 
-# x = range(0, 20, length=100)
-# y = sin.(x)
-# plot(x, y)
-f(x) = x^2/100
-x = range(0, 10, length=100)
-y1 = sin.(x)
-y2 = sinh.(x)/1E4
-y3 = cos.(x)
-y4 = sqrt.(x)
-y5 = f.(x)
-plot(x, [y1 y2 y3 y4 y5])
+Base.@kwdef mutable struct Lorenz
+    dt::Float64 = 0.02
+    σ::Float64 = 10
+    ρ::Float64 = 28
+    β::Float64 = 8/3
+    x::Float64 = 1
+    y::Float64 = 1
+    z::Float64 = 1
+end
 
+function step!(l::Lorenz)
+    dx = l.σ * (l.y - l.x)
+    dy = l.x * (l.ρ - l.z) - l.y
+    dz = l.x * l.y - l.β * l.z
+    l.x += l.dt * dx
+    l.y += l.dt * dy
+    l.z += l.dt * dz
+end
+
+attractor = Lorenz()
+
+
+# initialise a 3D plot with 1 empty series
+plt = plot3d(
+    1,
+    xlim = (-30, 30),
+    ylim = (-30, 30),
+    zlim = (0, 60),
+    title = "Lorenz Attractor",
+    legend = false,
+    marker = 2,
+)
+
+# build an animated gif by pushing new points to the plot, saving every 10th frame
+@gif for i=1:1500
+    step!(attractor)
+    push!(plt, attractor.x, attractor.y, attractor.z)
+end every 10

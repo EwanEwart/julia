@@ -4,8 +4,8 @@
 # define a function to generate the fibonacci sequence
 function fibonacci(n)
   # initialise the first two terms
-  a::Int = 1
-  b::Int = 1
+  a = 1
+  b = 1
   # create an empty array to store the sequence
   sequence = []
   # loop until n terms are generated
@@ -23,6 +23,6 @@ function fibonacci(n)
 end
 
 # test the function with an example
-n = 21
+n = 11
 println("The first $n terms of the fibonacci sequence are:")
 println(fibonacci(n))

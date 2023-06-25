@@ -1,0 +1,33 @@
+<svg height="200" width="300">
+
+    <!-- sharing stroke colour -->
+    <g fill="none" stroke="black">
+        <!-- individual stroke width -->
+        <path stroke-width="2" d="M5 20 l215 0" />
+        <path stroke-width="4" d="M5 40 l215 0" />
+        <path stroke-width="6" d="M5 60 l215 0" />
+    </g>
+
+    <g fill="none">
+        <!-- individual stroke colours -->
+        <path stroke="red" d="M5 20 l215 10" />
+        <path stroke="orange" d="M5 40 l215 10" />
+        <path stroke="blue" d="M5 60 l215 10" />
+    </g>
+
+    <!-- line caps -->
+    <g fill="none" stroke="#8a641f" stroke-width="6">
+        <path stroke-linecap="butt" d="M5 100 l215 0" />
+        <path stroke-linecap="round" d="M5 120 l215 0" />
+        <path stroke-linecap="square" d="M5 140 l215 0" />
+    </g>
+
+    <!-- SVG stroke-dasharray Property -->
+    <g fill="none" stroke="black" stroke-width="4">
+        <path stroke-dasharray="5,5" d="M5 150 l215 0" />
+        <path stroke-dasharray="10,10" d="M5 160 l215 0" />
+        <path stroke-dasharray="20,10,5,5,5,10" d="M5 170 l215 0" />
+        <path stroke-dasharray="4,2,2,2" d="M5 190 l215 0" />
+
+    </g>
+</svg>
