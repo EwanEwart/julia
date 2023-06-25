@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" width="400" height="200" "http://www.w3.org/2000/svg">
+
+    <!-- using inline CSS / position rectangle / set rectangle dimensions -->
+    <rect x="50" y="50" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+
+    <!-- opacity devoted to some attributes -->
+    <rect x="50" y="20" width="150" height="150"
+        style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.8;stroke-opacity:0.9" />
+
+    <!-- opacity whole element -->
+    <rect x="20" y="5" width="100" height="150" style="fill:blue;stroke:red;stroke-width:5;opacity:0.5" />
+
+    <!-- rounded corners -->
+    <rect x="150" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:orange;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>

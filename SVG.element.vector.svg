@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+    <g id="arrow_01" visibility="hidden" fill="none" stroke="#8e8585" stroke-width="2">
+        <path d="m0 50 10,-5" />
+        <path d="m0 50 10,5" />
+        <path d="m0,50 200,0" />
+        <path d="m200,50 -10,-5" />
+        <path d="m200,50 -10,5" />
+    </g>
+
+    <!-- 3 deep copies -->
+    <use href="#arrow_01" y=40 />
+    <use href="#arrow_01" y=60 />
+    <use href="#arrow_01" y=80 />
+
+
+</svg>

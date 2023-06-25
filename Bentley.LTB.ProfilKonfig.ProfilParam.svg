@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg viewBox="0 0 480 640" width="480" height="640" xmlns="http://www.w3.org/2000/svg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .small {
+                font: italic 13px sans-serif;
+                fill: #a4a4fa; /* the colour property is for HTML only */
+            }
+
+            .heavy {
+                font: bold 30px sans-serif;
+            }
+
+        </style>
+
+        <rect width="480" height="330" stroke="#61377d" stroke-width="4"/>
+
+        <text x="20" y="30" class="small">(9) Δy = "TextLeiste Objekte" - "TextLeiste MB"</text>
+
+        <text x="200" y="45" class="small">↑</text>
+        <text x="20" y="60" class="small">(8)  Δy₂ = "Textleiste MB" - "Max(Traversen)  (Mindestabstand Textleiste MB) "</text>
+        <text x="20" y="75" class="small">(7)  Δy₁ = "Mastbilder" - "Max(Traversen)" (Mindestabstand MB)</text>
+
+        <text x="200" y="105" class="small">↑</text>
+        <text x="20" y="120" class="small">(6)  y = "Max(Traversen)"</text>
+
+        <text x="200" y="135" class="small">↑</text>
+        <text x="20" y="150" class="small">(5)  Δy = "Profilkörper Anfang" - "Kulturartenzeile" (Mindestabst. Profilkörper)</text>
+
+        <text x="200" y="165" class="small">↑</text>
+        <text x="20" y="180" class="small">(4)  Δy = "Kulturartenzeile"</text>
+
+        <text x="200" y="195" class="small">↑</text>
+        <text x="20" y="210" class="small">(3)  Δy = "Kulturartenzeile" - "Grundlinie"</text>
+
+        <text x="200" y="225" class="small">↑</text>
+        <text x="20" y="240" class="small">(2)  y = Δy = : "Grundlinie" - "Trassenachse"</text>
+
+        <text x="200" y="255" class="small">↑</text>
+        <text x="20" y="270" class="small">(1)  y = 0 = "Trassenachse"</text>
+        <text x="200" y="285" class="small">↓</text>
+
+        <text x="20" y="300" class="small">(0)  |y| = Δy = "Trassenachse" - "Textleiste Feldlänge"</text>
+
+
+    </svg>

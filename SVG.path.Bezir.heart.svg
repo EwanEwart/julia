@@ -1,0 +1,43 @@
+    <!--
+    SVG Path - <path>
+
+    The <path> element is used to define a path.
+
+    The following commands are available for path data:
+
+        M = moveto
+        L = lineto
+        H = horizontal lineto
+        V = vertical lineto
+        C = curveto
+        S = smooth curveto
+        Q = quadratic Bézier curve
+        T = smooth quadratic Bézier curve
+        A = elliptical Arc
+        Z = closepath
+
+    Note:
+    All of the commands above
+    can also be expressed with lower letters.
+    Capital letters means absolutely positioned,
+    lower cases means relatively positioned. -->
+
+
+    <!--
+
+    Bézier curves are used to model smooth curves that can be scaled indefinitely.
+    Generally, the user selects two endpoints and one or two control points.
+    A Bézier curve with one control point is called a quadratic Bézier curve
+    and the kind with two control points is called cubic.
+
+    -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="
+    M 10,30
+    A 20,20 0,0,1 50,30
+    A 20,20 0,0,1 90,30
+    Q 90,60 50,90
+    Q 10,60 10,30 z"
+    />
+</svg>
