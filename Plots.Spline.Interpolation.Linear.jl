@@ -65,6 +65,7 @@ rv3 = v(20.0) # vt4 == 517.35 # fine
 plot([r1,r2,r3,r4,r5],[v1,v2,v3,v4,v5])
 
 # (time, height)
+# Vector{Tuple{Float64, Float64}} (alias for Array{Tuple{Float64, Float64}, 1})
 m = [
      (t1,vt1)
     ,(t2,vt2)

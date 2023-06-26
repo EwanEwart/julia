@@ -1,6 +1,10 @@
 using Plots, Bezier
 
-m = [ 4 7 5 4 6 5 3; 3 4 -2 4 5 6 0 ]
+# 2x7 Matrix{Int64}
+m = [
+    4 7 5 4 6 5 3;
+    3 4 -2 4 5 6 0
+]
 
 plot(bezier(m))
 
